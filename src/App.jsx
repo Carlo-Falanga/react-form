@@ -11,17 +11,17 @@ const articles = [
   },
   {
     id: 3,
-    title: "Introduzione a React",
+    title: "Gestire lo stato con useState",
     text: "Lo state permette ai componenti di React di gestire dati dinamici.",
   },
   {
     id: 4,
-    title: "Introduzione a React",
+    title: "Le props in React",
     text: "Le props permettono di passare dati da un componente padre a uno figlio.",
   },
   {
     id: 5,
-    title: "Introduzione a React",
+    title: "Il rendering delle liste",
     text: "In React le liste vengono renderizzate utilizzando metodi come map().",
   },
 ];
@@ -30,16 +30,16 @@ function App() {
   return (
     <>
       <div className="container">
-        <div className="row">
+        <div className="row mt-5">
           <div className="col">
-            <div className="card mb-3">
-              <div className="card-body">
-                <h5 className="card-title">Article title</h5>
-                <p className="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit unde eius corrupti, ut quisquam modi omnis amet odio ipsum vel?
-                </p>
+            {articles.map((item) => (
+              <div className="card mb-3" key={item.id}>
+                <div className="card-body">
+                  <h5 className="card-title">{item.title}</h5>
+                  <p className="card-text"></p>
+                </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
