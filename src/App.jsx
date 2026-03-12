@@ -27,8 +27,24 @@ const articles = [
 ];
 
 function App() {
-  return <>
-  </>;
+  return (
+    <>
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            <div className="card mb-3">
+              <div className="card-body">
+                <h5 className="card-title">Article title</h5>
+                <p className="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit unde eius corrupti, ut quisquam modi omnis amet odio ipsum vel?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default App;
