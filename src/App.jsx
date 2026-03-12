@@ -29,6 +29,7 @@ const articles = [
 function App() {
   return (
     <>
+    {/* Articles */}
       <div className="container">
         <div className="row mt-5">
           <div className="col">
@@ -42,6 +43,14 @@ function App() {
             ))}
           </div>
         </div>
+      </div>
+
+      {/* Form */}
+      <div className="container">
+      <div className="form">
+        <input className="form-control mt-5" type="text" />
+        <div className="btn btn-primary mt-3">Carica</div>
+      </div>
       </div>
     </>
   );
